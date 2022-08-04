@@ -11,17 +11,17 @@ import logging
 import time, datetime
 date=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 logger = logging.getLogger()
-
+from dotenv import load_dotenv
+load_dotenv()
 
 def create_api():
-    configs = configparser.ConfigParser()
-    configs.read('config.conf')
-    keys = configs['TWITTER']
 
-    consumer_key = keys['CONSUMER_KEY']
-    consumer_secret = keys['CONSUMER_SECRET']
-    access_key = keys['ACCESS_KEY']
-    access_secret = keys['ACCESS_SECRET']
+
+
+    consumer_key = os.getenv('CONSUMER_KEY')
+    consumer_secret = os.getenv('CONSUMER_SECRET')
+    access_key = os.getenv('ACCESS_KEY')
+    access_secret = os.getenv('ACCESS_SECRET')
 
     auth = OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_key, access_secret)
