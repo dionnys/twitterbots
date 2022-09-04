@@ -69,6 +69,7 @@ def get_followers():
     for i in followers:
         print(i)
 
-    #return(followers)
+    return(followers)
 if __name__ == '__main__':
     timeline()
+    get_followers()

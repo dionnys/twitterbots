@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/opt/homebrew/opt/python@3.10/bin/python3
 # # -*- coding: utf-8 -*-
 """
 #Copyright 2022 Dionnys Bonalde.

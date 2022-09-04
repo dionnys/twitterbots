@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/opt/homebrew/opt/python@3.10/bin/python3
 # # -*- coding: utf-8 -*-
 
 import tweepy
