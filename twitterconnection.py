@@ -17,8 +17,6 @@ load_dotenv()
 
 def create_api():
 
-
-
     consumer_key = os.getenv('CONSUMER_KEY')
     consumer_secret = os.getenv('CONSUMER_SECRET')
     access_key = os.getenv('ACCESS_KEY')
